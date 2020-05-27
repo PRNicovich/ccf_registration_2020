@@ -20,13 +20,24 @@ Achieving this vision requires robust alignment of new image data into the CCF s
 
 The Allen Institute for Brain Science will provide the following image datasets:
 
-* Optical projection tomography datasets from the Neuropixels pipeline
+* Optical projection tomography (OPT) datasets from the Neuropixels pipeline
 
-(To-do: add details - Josh)
+OPT is a 3D tomographic imaging modality for rapid volumetric imaging of cleared specimens analogous to a visible light computed tomography (CT) scan. [The Allen Institute NeuroPixels pipeline](https://www.biorxiv.org/content/10.1101/805010v1) identifies the position of probes in specimen brains with the combination of a transmitted light OPT reconstruction (for anatomical structures) and a fluorescence OPT reconstruction (for probe identification).  Raw data and the corresponding reconstruction appears in the figure below.
+
+[OPT rotating GIF]
+[Reconstruction GIF]
+
+The distinct contrast mechanism for these images and distortion in the specimen anatomy makes alignment challenging.  Improving the ability to align these specimens into the CCF would allow others to levarage high-speed 3D OPT imaging along with the NeuroPixels platform for their own research.  
 
 * fMOST datasets from the whole-brain morphology project
 
-(To-do: add details - Julie)
+Fluorescence micro-optical sectioning tomography (fMOST) combines serial imaging with thin (1-2 µm) sectioning of embedded tissue blocks, collecting sub-micron-resolution volumetric fluorescence imaging data for an entire specimen.  [The Allen Institute uses these datasets for morphological reconstruction and projection mapping of individual neurons through a whole mouse brain](https://www.biorxiv.org/content/10.1101/675280v1). Representative single images are included below.
+
+[fMOST 3D?]
+[fMOST image saggital]
+[fMOST image coronal]
+
+The fMOST datasets are large (10+ TB), anisotropic, and contain local distortions to the tissue that can complicate alignment to the CCF space.  These challenges are common to many optical brain imaging modalities, making solutions addressing these alignment issues immediately applicable to a wide range of research scenarios.
 
 The datasets can be access through BIL:
 

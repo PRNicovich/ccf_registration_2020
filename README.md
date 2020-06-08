@@ -20,11 +20,19 @@ Achieving this vision requires robust alignment of new image data into the CCF s
 
 The Allen Institute for Brain Science will provide the following image datasets:
 
-* Optical projection tomography datasets from the Neuropixels pipeline
+#### fMOST datasets from the whole-brain morphology project
+<img src="images/fmost_pipeline_overview.png" width="650" />
 
-(To-do: add details - Josh)
+The Allen Institute uses [fluorescence micro-optical sectioning tomography (fMOST)](https://www.nature.com/articles/ncomms12142) to collect three-dimensional whole brain fluorescence microscopy volumes at sub-micron resolution. Embedded mouse brain tissue is repeatedly sectioned at 1 µm depth while images are acquired at the tissue block face (0.35 µm x 0.35 µm x 1.0 µm native voxel size). The resulting datasets contain endogenous signal from the tissue as well as sparse cells expressing fluorescent proteins throughout their entire cell volume.  Expert analysists reconstruct 3D computer models of these labeled cells from the fMOST datasets. Alignment of cells from many different brains into the CCF reference space permits comparisons of neuronal anatomy, projection patterns, and diversity of connection types within and across regions of origin for the labeled cells. Example results from this pipeline can be seen in the preprint [here](https://www.biorxiv.org/content/10.1101/675280v1).
 
-* fMOST datasets from the whole-brain morphology project
+Current practice is to first generate a multi-resolution data pyramid from the native fMOST dataset. A resolution approximating that of the CCF reference volume is used for alignment.  The subsequent steps remove imaging artifacts and the align using pairs of points chosen by an expert annotator in the experimental and reference space.  This operation works sufficiently well for a small number of specimens, but scalability is limited by the need for expert annotation of each specimen. Automating this step would be extremely valuable for this pipeline and for others using fluorescence microscopy to study the mouse brain.
+
+Current challenges for automating fMOST - CCF alignment include:
+* Striping artifacts from the fMOST sectioning procedure
+* Tissue damage from embedding and sectioning, leading to separations between adjacent anatomical regions
+* Enlarged ventricles in the fMOST datasets due to the sample preparation procedure
+* Anatomical heterogeneity between specimens at the scale of the cell reconstruction features
+
 
 (To-do: add details - Julie)
 

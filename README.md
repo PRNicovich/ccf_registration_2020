@@ -21,7 +21,7 @@ Achieving this vision requires robust alignment of new image data into the CCF s
 The Allen Institute for Brain Science will provide the following image datasets:
 
 #### fMOST datasets from the whole-brain morphology project
-<img src="images/fmost_pipeline_overview.png" width="650" />
+<img src="images/fMOST_CCF_reg_figure.jpg" width="650" />
 
 The Allen Institute uses [fluorescence micro-optical sectioning tomography (fMOST)](https://www.nature.com/articles/ncomms12142) to collect three-dimensional whole brain fluorescence microscopy volumes at sub-micron resolution. Embedded mouse brain tissue is repeatedly sectioned at 1 µm depth while images are acquired at the tissue block face (0.35 µm x 0.35 µm x 1.0 µm native voxel size). The resulting datasets contain endogenous signal from the tissue as well as sparse cells expressing fluorescent proteins throughout their entire cell volume.  Expert analysists reconstruct 3D computer models of these labeled cells from the fMOST datasets. Alignment of cells from many different brains into the CCF reference space permits comparisons of neuronal anatomy, projection patterns, and diversity of connection types within and across regions of origin for the labeled cells. Example results from this pipeline can be seen in the preprint [here](https://www.biorxiv.org/content/10.1101/675280v1).
 
